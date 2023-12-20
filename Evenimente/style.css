@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}
+
+header {
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  padding-left: 30px;
+}
+
+h1 {
+  display: inline;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  padding-left: 5px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: #df6951;
+}
+
+header p {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 58px;
+  font-weight: bold;
+  width: 487px;
+}
+
+section {
+  margin: 200px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.destinații {
+  width: 710px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.destinație h2,
+.destinație p:nth-child(3) {
+  color: #181e4b;
+}
+
+.destinație h2 {
+  margin-top: 10px;
+}
+
+.destinație p:nth-child(3) {
+  width: 225px;
+  margin: 10px 0;
+}
+
+.price-rating {
+  display: flex;
+  gap: 161px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.căutare-destinații {
+  background-color: #ededed;
+  padding: 30px;
+  height: fit-content;
+  margin-left: 50px;
+}
+
+.căutare-destinații h2 {
+  color: #181e4b;
+  text-align: center;
+}
+
+.căutare-destinații p:nth-child(4) {
+  font-weight: bold;
+}
+
+.căutare-destinații p:nth-child(2),
+.căutare-destinații p:nth-child(4) {
+  width: 313px;
+  margin: 20px 0;
+}
+
+.căutare-destinații p:nth-child(6) {
+  margin-bottom: 20px;
+}
+
+.căutare-destinații div:last-child {
+  text-align: center;
+}
+
+.inputs input:first-child {
+  background-image: url("Imagini/search-icon.png");
+}
+
+.inputs input:nth-child(2) {
+  background-image: url("Imagini/location-icon.png");
+}
+
+.inputs input:last-child {
+  background-image: url("Imagini/calendar-icon.png");
+}
+
+input {
+  background-repeat: no-repeat;
+  background-position: 15px 13px;
+  padding: 15px 50px;
+  border: none;
+}
+
+.filter-bar {
+  height: 30px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.filter-bar div {
+  width: 30px;
+  height: inherit;
+  background-color: #df6951;
+  display: inline-block;
+}
+
+.filter-bar div:last-child {
+  float: right;
+}
+
+button {
+  border: none;
+  background-color: #df6951;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.recenzie {
+  margin: 200px auto 0;
+}
+
+.recenzie div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.navigare-recenzie .cerc {
+  width: 62px;
+  height: 62px;
+  background-color: #737373;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.recenzie div p:first-child {
+  color: #df6951;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.recenzie div h2:nth-child(2) {
+  color: #181e4b;
+  font-weight: bold;
+  font-size: 50px;
+  max-width: 639px;
+}
+
+.recenzie div img:nth-child(3) {
+  margin-top: 20px;
+}
+
+.recenzie div p:nth-child(4) {
+  margin-top: -10px;
+  width: 376px;
+}
+
+.recenzie div p:nth-child(5) {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.recenzie div div:nth-child(6) {
+  position: relative;
+  top: -120px;
+  align-self: flex-start;
+}
+
+.recenzie div div:nth-child(7) {
+  position: relative;
+  top: -182px;
+  align-self: flex-end;
+}
+
+/*Footer*/
+
+footer {
+  margin: 76px auto 0;
+}
+
+.continut {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer h1 {
+  font-size: 32px;
+  color: #181e4b;
+}
+
+footer h2 {
+  color: #181433;
+}
+
+.slogan {
+  color: #757095;
+  display: flex;
+  align-items: center;
+}
+
+.link-uri h2 {
+  color: #181433;
+}
+
+.link-uri ul {
+  padding: 0;
+}
+
+.link-uri li {
+  display: block;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.link-uri li a {
+  text-decoration: none;
+  color: #181433;
+}
+
+.link-uri li a:hover {
+  color: #df6951;
+}
+
+hr {
+  margin-top: 30px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+  color: #181433;
+}

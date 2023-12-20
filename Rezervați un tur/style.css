@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}
+
+header {
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  padding-left: 30px;
+}
+
+h1 {
+  display: inline;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  padding-left: 5px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: #df6951;
+}
+
+header p {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 58px;
+  font-weight: bold;
+  width: 487px;
+  text-align: center;
+}
+
+.excursie {
+  margin-top: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 100px;
+}
+
+h2 {
+  color: #181e4b;
+}
+
+.pret {
+  color: #df6951;
+  font-size: 24px;
+}
+
+.locatie-pret {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stars {
+  width: 80px;
+  height: 16px;
+  background-image: url("Imagini/star.png");
+}
+
+.stars-review {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+.descriere {
+  margin-top: 20px;
+  max-width: 606px;
+}
+
+.detalii-excursie {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.detalii {
+  display: flex;
+  column-gap: 100px;
+}
+
+.detalii p:first-child {
+  width: 110px;
+  color: #df6951;
+}
+
+.inclus-x,
+.inclus-v {
+  display: flex;
+  column-gap: 10px;
+}
+
+.container-x,
+.container-v {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.rezervare-tur {
+  background-color: #ededed;
+  height: fit-content;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  text-align: center;
+}
+
+.rezervare-tur p {
+  width: 313px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+input {
+  background-repeat: no-repeat;
+  background-position: 15px 13px;
+  padding: 15px 50px;
+  border: none;
+}
+
+.inputs input:first-child {
+  background-image: url("Imagini/avatar.png");
+}
+
+.inputs input:nth-child(2),
+.inputs input:nth-child(3) {
+  background-image: url("Imagini/mail.png");
+}
+
+.inputs input:nth-child(4) {
+  background-image: url("Imagini/telefon.png");
+}
+
+.inputs input:nth-child(5) {
+  background-image: url("Imagini/calendar.png");
+}
+
+.inputs input:nth-child(6) {
+  background-image: url("Imagini/tag.png");
+}
+
+.inputs input:nth-child(7) {
+  background-image: url("Imagini/mesaj.png");
+}
+
+.rezervare-tur div:last-child {
+  text-align: center;
+}
+
+button {
+  border: none;
+  background-color: #df6951;
+  color: white;
+  width: fit-content;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.galerie {
+  margin-top: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galerie .continut {
+  flex-direction: column;
+  row-gap: 20px;
+  width: 494px;
+}
+
+.galerie p {
+  max-width: 583px;
+}
+
+.imagini {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.recenzie {
+  margin: 200px auto 0;
+  max-width: 639px;
+}
+
+.recenzie div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.navigare-recenzie .cerc {
+  width: 62px;
+  height: 62px;
+  background-color: #737373;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.recenzie div p:first-child {
+  color: #df6951;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.recenzie div h2:nth-child(2) {
+  color: #181e4b;
+  font-weight: bold;
+  font-size: 50px;
+  max-width: 639px;
+}
+
+.recenzie div img:nth-child(3) {
+  margin-top: 20px;
+}
+
+.recenzie div p:nth-child(4) {
+  margin-top: -10px;
+  width: 376px;
+}
+
+.recenzie div p:nth-child(5) {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.recenzie div div:nth-child(6) {
+  position: relative;
+  top: -120px;
+  align-self: flex-start;
+}
+
+.recenzie div div:nth-child(7) {
+  position: relative;
+  top: -182px;
+  align-self: flex-end;
+}
+
+/*Footer*/
+
+footer {
+  margin: 76px auto 0;
+}
+
+.continut {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer h1 {
+  font-size: 32px;
+  color: #181e4b;
+}
+
+footer h2 {
+  color: #181433;
+}
+
+.slogan {
+  color: #757095;
+  display: flex;
+  align-items: center;
+}
+
+.link-uri h2 {
+  color: #181433;
+}
+
+.link-uri ul {
+  padding: 0;
+}
+
+.link-uri li {
+  display: block;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.link-uri li a {
+  text-decoration: none;
+  color: #181433;
+}
+
+.link-uri li a:hover {
+  color: #df6951;
+}
+
+hr {
+  margin-top: 30px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+  color: #181433;
+}

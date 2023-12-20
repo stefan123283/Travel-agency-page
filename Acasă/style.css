@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}
+
+header {
+  position: relative;
+  height: 976px;
+}
+
+nav {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  padding-left: 30px;
+}
+
+h1 {
+  display: inline;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  padding-left: 5px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: #df6951;
+}
+
+header p {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 58px;
+  font-weight: bold;
+  max-width: 487px;
+}
+
+.servicii {
+  margin-top: 200px;
+}
+
+.servicii h2 {
+  font-size: 50px;
+  color: #181e4b;
+  text-align: center;
+}
+
+.serviciile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.serviciu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.serviciu p:nth-child(2) {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e1d4c;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+.serviciu p:nth-child(3) {
+  color: #5e6282;
+  width: 170px;
+  margin-top: 10px;
+}
+
+.explorează {
+  margin-top: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.explorează .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.explorează .content h2 {
+  font-size: 50px;
+}
+
+.explorează .content button {
+  margin-top: 10px;
+  width: 176px;
+  height: 56px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+}
+
+.explorează div:first-child .black-layer,
+.explorează div:nth-child(2) .black-layer {
+  padding: 100px;
+}
+
+.natura {
+  background-image: url("Imagini/munti.png");
+}
+
+.orase {
+  background-image: url("Imagini/orase.png");
+  background-repeat: no-repeat;
+}
+
+.black-layer {
+  background-color: #1e1e1e;
+  opacity: 60%;
+}
+
+.recenzie {
+  max-width: 639px;
+  margin: 200px auto 0;
+}
+
+.recenzie div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.navigare-recenzie .cerc {
+  width: 62px;
+  height: 62px;
+  background-color: #737373;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.recenzie div p:first-child {
+  color: #df6951;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.recenzie div h2:nth-child(2) {
+  color: #181e4b;
+  font-weight: bold;
+  font-size: 50px;
+  width: 419px;
+}
+
+.recenzie div img:nth-child(3) {
+  margin-top: 20px;
+}
+
+.recenzie div p:nth-child(4) {
+  margin-top: -10px;
+  width: 376px;
+}
+
+.recenzie div p:nth-child(5) {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.recenzie div div:nth-child(6) {
+  position: relative;
+  top: -120px;
+  align-self: flex-start;
+}
+
+.recenzie div div:nth-child(7) {
+  position: relative;
+  top: -182px;
+  align-self: flex-end;
+}
+
+footer {
+  margin: 76px auto 0;
+}
+
+.continut {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer h1 {
+  font-size: 32px;
+  color: #181e4b;
+}
+
+footer h2 {
+  color: #181433;
+}
+
+.slogan {
+  color: #757095;
+  display: flex;
+  align-items: center;
+}
+
+.link-uri h2 {
+  color: #181433;
+}
+
+.link-uri ul {
+  padding: 0;
+}
+
+.link-uri li {
+  display: block;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.link-uri li a {
+  text-decoration: none;
+  color: #181433;
+}
+
+.link-uri li a:hover {
+  color: #df6951;
+}
+
+hr {
+  margin-top: 30px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+  color: #181433;
+}
+
